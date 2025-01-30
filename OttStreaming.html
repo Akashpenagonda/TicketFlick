@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+    *body {
+      background-color: black;
+    }
+
+    .navbar-brand img {
+      margin-left: 20%;
+    }
+
+    .parent {
+      background-color: black;
+    }
+
+    .hacked {
+      position: relative;
+      right: 20%;
+    }
+
+
+    .d-flex input {
+      margin-left: 2%;
+      border-radius: 29px;
+    }
+
+    .login {
+      position: relative;
+      left: 50px;
+      color: white;
+    }
+
+    .signup {
+      position: relative;
+      left: 80px;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-brand img {
+        margin-left: 0;
+        width: 150px;
+        /* Adjust size as needed */
+      }
+
+      .hacked {
+        right: 0;
+      }
+
+      .login,
+      .signup {
+        left: 0;
+      }
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+
+    .ott {
+      margin-left: 7%;
+      margin-top: 2%;
+      margin-bottom: 0%;
+      font-family: "poppins";
+      font-weight: bold;
+      color: white;
+    }
+
+    .ott img {
+      margin-left: 0%;
+    }
+
+    .ottmovies {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .ottmoviesboxtwo {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 4%;
+    }
+
+    .upcoming {
+      margin-left: 8%;
+      margin-top: 2%;
+      margin-bottom: 3%;
+      font-family: "poppins";
+      font-weight: bold;
+
+    }
+
+    .cruose {
+      max-width: 1300px;
+      margin: auto;
+      margin-bottom: 4%;
+    }
+
+    .card-body {
+      background-color: black;
+
+    }
+
+    .ott-Disney {
+      margin-left: 5%;
+      color: white;
+
+    }
+
+    .ott-Disney img {
+      margin-left: 1%;
+      margin-bottom: 2%;
+    }
+
+    .ottthree {
+      margin-left: 7%;
+      margin-top: 2%;
+      margin-bottom: 5%;
+      font-family: "poppins";
+      font-weight: bold;
+      color: white;
+
+
+    }
+
+    .navbar-toggler-icon {
+
+      margin-left: 150px;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      /* Total black background */
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      /* White text color for better contrast */
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      /* White text to stand out against black background */
+      margin-top: 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #333;
+      /* Dark gray background for the card */
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px 0;
+      display: flex;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 150px;
+      height: auto;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info h2 {
+      font-size: 1.5em;
+      margin: 0;
+      color: #fff;
+    }
+
+    .info p {
+      font-size: 1em;
+      margin: 10px 0 0;
+      color: #ccc;
+      /* Light gray text for better readability */
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #ffd700;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .movie-card {
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #333;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-body h5 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card-body .details {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .card-body .review {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .card-body .rating {
+      color: #ffd700;
+      margin-top: 10px;
+    }
+
+    .card-body .rating i {
+      margin-right: 5px;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <div class="parent">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\LOGO_two-removebg-preview.png"
+          width="30%" height="10%">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="hacked">
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item active">
+              <a class="nav-link mr-4" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mr-4" href="home.html">Book Tickets <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mr-4" href="OttStreaming.html">OTTStreaming <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                <i class='bx bx-current-location'></i>Hyderbad
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hyderbad</a></li>
+                <li><a class="dropdown-item" href="#">chennai</a></li>
+                <li><a class="dropdown-item" href="#">mumbai</a></li>
+                <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+                <li><a class="dropdown-item" href="#">Pune</a></li>
+                <li><a class="dropdown-item" href="#">kolkata</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link mr-4" href="#">
+                MyAccount
+              </a>
+              <!-- Dropdown menu with a custom class -->
+              <ul class="dropdown-menu my-account-dropdown">
+                <li><a class="dropdown-item" href="#">your orders</a></li>
+                <li><a class="dropdown-item" href="#">Account and settings</a></li>
+                <li><a class="dropdown-item" href="#">Help center</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Offers</a></li>
+                <li><a class="dropdown-item" href="#">Reward</a></li>
+                <li><a class="dropdown-item" href="#">Food&Beverages</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <a class="login" href="login.html">Login</a>
+          <a class="signup" href="movieregisterpage.html">Signup</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <h1 class="ott">Movies streaming on Amazon<img
+        src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\Prime_Video-Logo.wine.png" width="15%"
+        alt=""></h1>
+    <div class="cruose">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\mission imposible.png"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\oppenheimer.png"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\tiger 3.png"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\capital.png"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <h1 class="ottthree"> Movies streaming on <img
+        src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\Netflix_2015_logo.svg.png" width="10%"
+        alt=""></h1>
+
+    <div class="cruose">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\Dark netfix.png"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\netfix strangerthings.png"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\adam project netflix.png"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <h1 class="ott-Disney"> Movies streaming on <img
+        src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\Disney+_Hotstar_logo.svg.png"
+        width="18%" alt=""></h1>
+
+    <div class="cruose">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\Hotstar02.png"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\Disney01.png"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\disney02.png"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container my-5">
+        <h1 class="text-center mb-4">OTT Movie Reviews</h1>
+        <div class="movie-grid">
+          <div class="movie-card">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\f5ec3b1c4430e2bd3ebe82d6e4636464.jpg" alt="Pushpa the Rule">
+            <div class="card-body">
+              <h5>Pushpa the Rule</h5>
+              <p class="details">Action | 2023</p>
+              <p class="review">
+                "An electrifying sequel that lives up to the hype, offering intense action A true cinematic triumph that
+                captivates and thrills audiences worldwide."</p>
+              <p class="rating"><i class="fas fa-star"></i> 4.5/5</p>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\8281574440bd966532cbcff595073310.jpg" alt="Oppenheimer">
+            <div class="card-body">
+              <h5>Oppenheimer</h5>
+              <p class="details">Drama | 2023</p>
+              <p class="review">"A breathtaking cinematic experience about history and power, unlike anything seen
+                before. A true cinematic masterpiece that captivates and inspires audiences worldwide."</p>
+              <p class="rating"><i class="fas fa-star"></i> 4.8/5</p>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\00eb6380c193dad9239b98898a48d61e.jpg"alt="Mission Impossible">
+            <div class="card-body">
+              <h5>Mission Impossible</h5>
+              <p class="details">Thriller | 2023</p>
+              <p class="review">"Non-stop action and heart-pounding thrills, featuring jaw-dropping stunts like never
+                before. A cinematic experience that will leave you breathless."</p>
+              <p class="rating"><i class="fas fa-star"></i> 4.7/5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

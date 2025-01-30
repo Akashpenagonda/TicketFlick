@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookingplatform.css">
+</head>
+<body>
+    <div class="parent">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="C:\Users\91798\OneDrive\Desktop\Resume Projects\TicketFlick\images\LOGO_two-removebg-preview.png"
+                width="30%" height="10%">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="hacked">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item active">
+                        <a class="nav-link mr-4" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link mr-4" href="#">BookTickets <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="OttStreaming.html" class="nav-link mr-4" href="#">OTTStreaming <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class='bx bx-current-location'></i>Hyderbad
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hyderbad</a></li>
+                            <li><a class="dropdown-item" href="#">chennai</a></li>
+                            <li><a class="dropdown-item" href="#">mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+                            <li><a class="dropdown-item" href="#">Pune</a></li>
+                            <li><a class="dropdown-item" href="#">kolkata</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link mr-4" href="#">
+                            MyAccount
+                        </a>
+                        <!-- Dropdown menu with a custom class -->
+                        <ul class="dropdown-menu my-account-dropdown">
+                            <li><a class="dropdown-item" href="#">your orders</a></li>
+                            <li><a class="dropdown-item" href="#">Account and settings</a></li>
+                            <li><a class="dropdown-item" href="#">Help center</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Offers</a></li>
+                            <li><a class="dropdown-item" href="#">Reward</a></li>
+                            <li><a class="dropdown-item" href="#">Food&Beverages</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <a href="" class="btn btn-outline-success" type="submit">Search</a>
+                </form>
+                <a class="login" href="login.html">Login</a>
+                <a class="signup" href="movieregisterpage.html">Signup</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="movie-container">
+        
+      <label>Pick a movie: </label>
+      <select id="movie">
+        <option value="250">Hanuman (Rs. 200)</option>
+        <option value="200">Guntur karam  (Rs. 50)</option>
+        <option value="150">Eagal (Rs. 150)</option>
+        <option value="100">Fighter (Rs. 100)</option>
+      </select>
+        
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>    
+        </ul>
+        
+        <div class="container">
+          <div class="screen"></div>
+          
+          <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+            </div>
+          
+          <p class="text">
+            You have selected <span id="count">0</span> seats for the total price of Rs. <span id="total">0</span>
+          </p>
+        </div>
+      </div>
+
+   <script>
+
+
+const container = document.querySelector('.container');
+const seats = document.querySelectorAll('.row .seat:not(.occupied)');
+const count = document.getElementById('count');
+const total = document.getElementById('total');
+const movieSelect = document.getElementById('movie');
+
+let ticketPrice = +movieSelect.value;
+
+//Update total and count
+function updateSelectedCount() {
+  const selectedSeats = document.querySelectorAll('.row .seat.selected');
+  const selectedSeatsCount = selectedSeats.length;
+  count.innerText = selectedSeatsCount;
+  total.innerText = selectedSeatsCount * ticketPrice;
+}
+
+//Movie Select Event
+movieSelect.addEventListener('change', e => {
+  ticketPrice = +e.target.value;
+  updateSelectedCount();
+});
+
+//Seat click event
+container.addEventListener('click', e => {
+  if (e.target.classList.contains('seat') &&
+     !e.target.classList.contains('occupied')) {
+    e.target.classList.toggle('selected');
+  }
+  updateSelectedCount();
+});
+   </script>
+
+      
+      <!-- jQuery (required for Bootstrap 4) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Popper.js (required for Bootstrap dropdown/toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

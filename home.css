@@ -1,0 +1,400 @@
+body {
+    background-color: black;
+}
+
+.navbar-brand img {
+    margin-left: 20%;
+}
+
+.parent {
+    background-color: black !important;
+}
+
+.navbar-toggler-icon {
+    margin-left: 150px;
+}
+
+.hacked {
+    position: relative;
+    right: 20%;
+}
+
+.d-flex input {
+    margin-left: 2%;
+    border-radius: 29px;
+}
+
+.login {
+    position: relative;
+    left: 50px;
+    color: white;
+}
+
+.signup {
+    position: relative;
+    left: 80px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        margin-left: 0;
+        width: 150px;
+        /* Adjust size as needed */
+    }
+
+    .hacked {
+        right: 0;
+    }
+
+    .login,
+    .signup {
+        left: 0;
+    }
+
+    .login, .signup {
+        position: relative;
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .ott, .upcoming, .ottthree {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .ottmovies, .ottmoviesboxtwo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flick {
+        width: 60%;
+        margin-left: 35%;
+    }
+
+    .Story {
+        margin-left: 22% !important;
+        color: #b68366;
+        
+    }
+
+    .google, .apple {
+        margin-left: 0;
+        width: 50%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .follow {
+        margin-right: 0;
+    }
+
+    .footer-big .footer-widget {
+        margin-bottom: 20px;
+    }
+
+    .footer-menu ul li a {
+        font-size: 14px;
+    }
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.ott {
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    font-family: "poppins";
+    font-weight: bold;
+    color: white;
+}
+
+.ott img {
+    margin-left: 0%;
+}
+
+.ottmovies {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ottmoviesboxtwo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.upcoming {
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-family: "poppins";
+    font-weight: bold;
+}
+
+.cruose {
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+.card-body {
+    background-color: black;
+}
+
+.ott-Disney {
+    margin-left: 5%;
+    color: white;
+}
+
+.ott-Disney img {
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+
+.ottthree {
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: "poppins";
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header.jumbotron {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 100px 25px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+section#about h2 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: #ce1a19;
+    color: white;
+    transition: 0.3s;
+}
+
+
+section#about p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.feature-box {
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1.1rem;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+}
+
+.flick{
+    width: 25%;
+    margin-left: 40%;
+}
+
+.Story{
+    margin-left: 45%;
+    color:#b68366;
+}
+
+.google{
+    margin-left: 43%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #898b96;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-weight: 400;
+    padding: 0;
+    color: #fafbfe;
+}
+
+a {
+    color: #5867dd;
+}
+
+.footer-big {
+    padding: 105px 0 65px 0;
+}
+
+.footer-big .footer-widget {
+    margin-bottom: 40px;
+}
+
+.footer--light {
+    background:black;
+}
+
+.footer-big .footer-menu ul li a,
+.footer-big p,
+.footer-big ul li {
+    color: #898b96;
+}
+
+.footer-menu {
+    padding-left: 48px;
+}
+
+.footer-menu ul li a {
+    font-size: 15px;
+    line-height: 32px;
+    transition: 0.3s;
+}
+
+.footer-menu ul li a:hover {
+    color: #ce1a19;
+}
+
+.footer-widget-title {
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mini-footer {
+    background: black;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.mini-footer p {
+    margin: 0;
+    line-height: 26px;
+    font-size: 15px;
+    color: #999;
+}
+
+.mini-footer p a {
+    color: #ce1a19;
+    font-weight: 500;
+}
+
+.mini-footer p a:hover {
+    color: #34bfa3;
+}
+
+.widget-about img {
+    display: block;
+    margin-bottom: 30px;
+    max-width: 70%;
+}
+
+.widget-about p {
+    font-weight: 400;
+}
+
+.widget-about .contact-details {
+    margin: 30px 0 0 0;
+}
+
+.widget-about .contact-details li {
+    margin-bottom: 10px;
+}
+
+.widget-about .contact-details li:last-child {
+    margin-bottom: 0;
+}
+
+.widget-about .contact-details li i {
+    padding-right: 10px;
+    color: #333;
+}
+
+.widget-about .contact-details li a {
+    color: #5867dd;
+}
+
+@media (max-width: 991px) {
+    .footer-menu {
+        padding-left: 0;
+    }
+    .widget-about img {
+        max-width: 50%;
+    }
+}
+
+.follow {
+    margin-left: 24%;
+}
+
+
+
+
+
+

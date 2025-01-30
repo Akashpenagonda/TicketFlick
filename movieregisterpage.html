@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form using Bootstrap</title>
+    <link href="login.html" rel="import"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles */
+        .bg {
+            background: url(heyy.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(7, 7, 7, 0.20); /* Transparent background */
+            backdrop-filter: blur(2px); /* Optional: Adds blur effect */
+        }
+        .registration-heading,
+        .form-group label {
+            color: white;
+        }
+        .card input[type="text"],
+        .card input[type="email"],
+        .card input[type="tel"],
+        .card input[type="password"],
+        .card input[type="checkbox"],
+        .card button[type="submit"] {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent background for input fields */
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        .card input[type="text"]:focus,
+        .card input[type="email"]:focus,
+        .card input[type="tel"]:focus,
+        .card input[type="password"]:focus {
+            background-color: rgba(255, 255, 255, 0.3); /* Slightly darker background on focus */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="card p-4">
+            <h1 class="text-center mb-4 registration-heading">Registration</h1> <!-- Add registration-heading class -->
+            <form id="registrationForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="userName">User Name</label>
+                        <input type="text" class="form-control" id="userName" placeholder="User Name" required>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="declaration">
+                    <label class="form-check-label" for="declaration"><strong>I hereby declare that the above information provided is true and correct</strong></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Registration Successful</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Your registration was successful! <i class="fas fa-check-circle text-success"></i></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('#registrationForm').submit(function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+    
+            // Show success modal
+            $('#successModal').modal('show');
+            
+             // Redirect to redirect-page.html after 2 second
+          setTimeout(function() {
+            window.location.href = 'login.html';
+          }, 1000);
+          });
+        });
+      </script>
+    
+</body>
+</html>
